@@ -1,5 +1,5 @@
 # toddalstrom.github.io
 
 Markup : * Where to find me:
-              * [Named Link](http://www.beeradvocate.com "BeerAdvocate")
-              * [Named Link](http://mastodon.social/@toddalstrom "Mastodon")
+              * [BeerAdvocate](http://www.beeradvocate.com)
+              * [Mastodon](http://mastodon.social/@toddalstrom)
