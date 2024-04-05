@@ -1,12 +1,13 @@
 body {
     background-color: #000000;
-    text-align: center;
     color: #999999;
 }
 a {
     color: #F7F7F7;
 }
 .block {
+    margin: auto;
     width: 75%;
     text-align: left;
+    padding: 25px;
 }
