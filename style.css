@@ -1,8 +1,9 @@
 body {
     background-color: #000000;
-    text-align: left;
+    text-align: center;
     color: #F7F7F7;
 }
 .block {
     width: 75%;
+    text-align: left;
 }
