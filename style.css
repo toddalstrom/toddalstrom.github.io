@@ -3,7 +3,7 @@ body {
     text-align: center;
     color: #F7F7F7;
 }
-div #block {
+.block {
     width: 75%;
     text-align: left;
 }
