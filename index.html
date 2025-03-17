@@ -7,28 +7,47 @@
         <meta name="fediverse:creator" content="@toddalstrom@mastodon.social">
         <meta name="author" content="Todd Alström">
         <title>Todd Alström | Founder of BeerAdvocate</title>
+        
         <style>
-            body {
-                background-color: #000000;
-                color: #b3b3b3;
-                font-family: "Lucida Console", "Courier New", Monaco, monospace;
-            }
-            a {
-                color: #d4ac0d;
-                text-decoration: none;
-            }
-            a.mutedlink {
-                color: #c0c0c0;
-                text-decoration: none;
-            }
-            a:hover {
-                color: #f4d03f;
-                text-decoration: none;
+            body, p, a {
+                background-color: black;
+                color: #ffb700;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                opacity: 85%;
             }
             .block {
                 margin: auto;
                 width: 80%;
                 text-align: left;
+            }
+            /* Fading effect */
+            @keyframes fade {
+                0% { opacity: 1; }
+                50% { opacity: 0.75; }
+                100% { opacity: 1; }
+            }
+            h1, h2, h3, p, a {
+                animation: fade 10s infinite;
+                text-shadow: 1px 1px 0 rgba(255, 183, 0, 0.5), 0 0 10px rgba(255, 183, 0, 0.3);
+            }
+            .prompt {
+                font-weight: bold; /* Make the prompt bold */
+                margin-top: 20px; /* Space above the prompt */
+                display: inline; /* Keep the prompt inline */
+            }
+            .cursor {
+                display: inline-block; /* Make the cursor an inline block */
+                width: 10px; /* Width of the cursor */
+                height: 16px; /* Height of the cursor */
+                background-color: #ffb700; /* Amber color for the cursor */
+                animation: blink 1s step-end infinite; /* Blinking effect */
+                vertical-align: middle; /* Align cursor vertically with text */
+            }
+            /* Blinking cursor animation */
+            @keyframes blink {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0; }
             }
         </style>
     </head>
@@ -42,21 +61,19 @@
             <p>Hei, I'm Todd Alström. Founder of BeerAdvocate. Living in Helsinki, Finland since May 2023.</p>
             <p>Dad, husband, OG champion of beer, social organizer, coder, forum admin, privacy & tech enthusiast, fediverse fanatic & devotee of a decentralized social web, coffee fiend, sci-fi geek, punk, gamer, Knight of the Brewers' Mash Staff, American Brewers Guild graduate, veteran, student of critical thinking, and whatnot.</p>
             <p>Obsessed with Suomalaiset pohjahiivaoluet (Finnish bottom yeast beers; lagers; olut), ruisleipä, salmiakki, friluftsliv, and kalsarikännit since moving to Suomi (Finland).</p>
-            <hr />
             <h2>Social media is dead.</h2>
             <p>But you can always find me on:</p>
-            <ul>
-                <li><a href="https://www.beeradvocate.com/community/members/todd.2/" target="_blank" rel="me">BeerAdvocate</a><!--: arguably the best, and oldest (1996), online beer community dedicated to discussing, reviewing, and learning more about beer.--></li>
-                <li><a href="https://bsky.app/profile/toddalstrom.com" target="_blank" rel="me">Bluesky</a><!--: a social app built on the AT Protocol, an open-source framework for building communities that can talk to each other over a modern, federated network that's not owned by a single company and offers users account portability and control over their social identity.</li>-->
-                <li><a href="https://www.linkedin.com/in/toddalstrom/" target="_blank" rel="me">LinkedIn</a></li>
-                <li><a href="https://mastodon.social/@toddalstrom" target="_blank" rel="me">Mastodon</a><!--: a free, open-source, decentralized microblogging platform run by a non-profit with no ads, algorithms, cringey billionaires, and greedy megacorps. Also part of the Fediverse, powered by the ActivityPub protocol.--></li>
-                
-            </ul>
+            <blockquote>
+                <a href="https://www.beeradvocate.com/community/members/todd.2/" target="_blank" rel="me">BeerAdvocate</a>
+                <br /><a href="https://bsky.app/profile/toddalstrom.com" target="_blank" rel="me">Bluesky</a>
+                <br /><a href="https://www.linkedin.com/in/toddalstrom/" target="_blank" rel="me">LinkedIn</a>
+                <br /><a href="https://mastodon.social/@toddalstrom" target="_blank" rel="me">Mastodon</a>
+            </blockquote>
             <p>...and maybe lurking elsewhere.</p>
         </main>
         <footer class="block">
-            <hr />
             <p>Hosted on <a href="https://github.com/toddalstrom" target="_blank" class="mutedlink" rel="me">GitHub</a>.</p>
+            <p class="prompt">]<span class="cursor"></span></p>
         </footer>
     </body>
 </html>
