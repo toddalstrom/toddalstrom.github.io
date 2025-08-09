@@ -6,6 +6,7 @@
         "498c62500688dc540302cc8eb5061602227a60bdd1d6161e014ca492c4fb7e61": [
             "wss://nos.lol",
             "wss://relay.damus.io",
+            "wss://relay.nostr.band",
             "wss://relay.primal.net"
         ]
     }
