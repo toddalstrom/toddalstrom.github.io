@@ -9,54 +9,26 @@
         <title>Todd Alström | Founder of BeerAdvocate</title>
         <style>
             body {
-                background-color: black;
-                color: #ffb700;
-                font-size: 16px;
-                font-family: 'Courier New', Courier, monospace;
-                opacity: 85%;
-                padding-bottom: 100px;
+                background-color: #000000;
+                color: #808b96;
+                font-family: "Lucida Console", "Courier New", Monaco, monospace;
             }
-            a:link, a:visited {
-                color: #ffb700;
+            a {
+                color: #d4ac0d;
                 text-decoration: none;
             }
-            a:hover, a:active {
-                color: #ffb700;
-                text-decoration: underline;
+            a.mutedlink {
+                color: #abb2b9;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #f4d03f;
+                text-decoration: none;
             }
             .block {
                 margin: auto;
                 width: 80%;
                 text-align: left;
-                word-break: break-all
-            }
-            /* Fading effect */
-            @keyframes fade {
-                0% { opacity: 1; }
-                50% { opacity: 0.75; }
-                100% { opacity: 1; }
-            }
-            h1, h2, h3, p, a {
-                animation: fade 5s infinite;
-                text-shadow: 1px 1px 0 rgba(255, 183, 0, 0.5), 0 0 10px rgba(255, 183, 0, 0.3);
-            }
-            .prompt {
-                font-weight: bold; /* Make the prompt bold */
-                margin-top: 20px; /* Space above the prompt */
-                display: inline; /* Keep the prompt inline */
-            }
-            .cursor {
-                display: inline-block; /* Make the cursor an inline block */
-                width: 10px; /* Width of the cursor */
-                height: 16px; /* Height of the cursor */
-                background-color: #ffb700; /* Amber color for the cursor */
-                animation: blink 1s step-end infinite; /* Blinking effect */
-                vertical-align: middle; /* Align cursor vertically with text */
-            }
-            /* Blinking cursor animation */
-            @keyframes blink {
-                0%, 100% { opacity: 1; }
-                50% { opacity: 0; }
             }
         </style>
     </head>
@@ -72,7 +44,6 @@
             <blockquote>
                 * <a href="https://www.beeradvocate.com/community/members/todd.2/" target="_blank" rel="me">BeerAdvocate</a>
                 <br />* <a href="https://mastodon.social/@toddalstrom" target="_blank" rel="me">Mastodon</a>
-                <br />* npub1fxxxy5qx3rw9gqczej8t2pskqg385c9a68tpv8spfjjf938m0essmu5zw7
             </blockquote>
             <p>...and maybe lurking elsewhere.</p>
                 <a href="https://bsky.app/profile/toddalstrom.com" target="_blank" rel="me" style="display: none;">Bluesky</a>
@@ -88,7 +59,7 @@
             -->
         </main>
         <footer class="block">
-            <p class="prompt"><span class="cursor"></span></p>
+            <p></p>
         </footer>
     </body>
 </html>
